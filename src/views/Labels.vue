@@ -17,9 +17,12 @@
 
   import Vue from 'vue';
   import {Component} from 'vue-property-decorator';
+  import Button from '@/components/Button.vue';
 
 
-  @Component
+  @Component({
+    components: {Button}
+  })
   export default class Labels extends Vue {
     tags = window.tagList;
 
